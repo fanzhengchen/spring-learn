@@ -1,0 +1,9 @@
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/config/MybatisMasterConfiguration.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/Application.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/config/AppConfiguration.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/config/MybatisSlaveConfiguration.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/mapper/master/MasterUserMapper.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/model/User.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/MultipleDataSource.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/AppTask.java
+/Users/fanzhengchen/IntellijProjects/springbootlearn/mybatis/src/main/java/com/xgn/fzc/mapper/slave/SlaveUserMapper.java
