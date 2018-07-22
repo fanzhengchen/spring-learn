@@ -28,13 +28,9 @@ import javax.sql.DataSource;
 @MapperScan(value = "com.xgn.fzc.mapper.master", sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MybatisMasterConfiguration {
 
-
-
     @Autowired
     @Qualifier("masterDataSource")
     DataSource masterDataSource;
-
-
 
     @Bean(name = "masterSqlSessionFactory")
     public SqlSessionFactory masterSqlSessionFactory() throws Exception {

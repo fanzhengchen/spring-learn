@@ -11,6 +11,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+import java.nio.channels.SocketChannel;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -42,5 +44,7 @@ public class AppTask implements ApplicationRunner, ApplicationContextAware {
         log.info("master {}", masterMapper.countAll());
         MultipleDataSource.setDataSourceKey("slaveDataSource");
         log.info("master {}", slaveMapper.countAll());
+        SocketChannel socketChannel;
+
     }
 }

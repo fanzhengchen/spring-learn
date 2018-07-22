@@ -1,7 +1,0 @@
-com/xgn/fzc/config/AppConfiguration.class
-com/xgn/fzc/mapper/slave/SlaveUserMapper.class
-com/xgn/fzc/model/User.class
-com/xgn/fzc/config/MybatisMasterConfiguration.class
-com/xgn/fzc/MultipleDataSource.class
-com/xgn/fzc/config/MybatisSlaveConfiguration.class
-com/xgn/fzc/mapper/master/MasterUserMapper.class

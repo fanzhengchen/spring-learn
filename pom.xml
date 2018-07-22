@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mybatis</module>
+        <module>bean-factory</module>
     </modules>
 
 
@@ -28,6 +29,12 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.mybatis.generator</groupId>

@@ -165,4 +165,10 @@
         select count(0)
         from user
     </select>
+
+
+    <insert id="insertUser" parameterType="com.xgn.fzc.model.User"
+            keyProperty="id" keyColumn="id">
+
+    </insert>
 </mapper>
