@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_PATH" value="logs"/>
+    <property name="FILE_NAME" value="bean-factory"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%cyan(%d{HH:mm:ss.SSS}) %boldMagenta([%thread]) %highlight(%-5level) %boldYellow(%logger{35}) - \(%F:%L\) - %green(%msg%n)</pattern>
+        </encoder>
+    </appender>
+
+    <!--  每天生成一个日志文件，保存30天的日志文件。 -->
+    <appender name="xgn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/bean-factory.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/logs/${FILE_PATH}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - (%F:%L) - %msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--<logger name="com.xinguangnet.tuchao.goodscenter" level="INFO"/>-->
+    <root level="INFO">
+        <appender-ref ref="console"/>
+        <appender-ref ref="xgn"/>
+    </root>
+
+    <logger name="com.xgn.fzc" level="INFO"/>
+</configuration>
