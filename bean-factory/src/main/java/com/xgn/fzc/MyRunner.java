@@ -23,5 +23,6 @@ public class MyRunner implements ApplicationRunner {
         log.debug("MyRunner debug");
         log.error("MyRunner error");
         log.warn("MyRunner warn");
+        log.trace("MyRunner trace");
     }
 }
